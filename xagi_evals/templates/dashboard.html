@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}xAGI Evals - Dashboard{% endblock %}
+
+{% block content %}
+  <h1>xAGI Evals Dashboard</h1>
+  <p>Welcome to the xAGI Evals platform. This dashboard will provide an overview of robot data, training progress, and evaluation metrics.</p>
+
+  <h2>Overview</h2>
+  <p><i>Charts and summaries of overall data will be displayed here.</i></p>
+  <ul>
+    <li>Total Robot Episodes: [Placeholder]</li>
+    <li>Tasks Successfully Completed: [Placeholder]</li>
+    <li>Data Points Annotated: [Placeholder]</li>
+  </ul>
+
+  <h2>Recent Evaluations</h2>
+  <p><i>A list or table of recent evaluations will go here.</i></p>
+  <ul>
+    <li><a href="{{ url_for('detailed_info', item_id='eval1') }}">Evaluation 1 Details</a></li>
+    <li><a href="{{ url_for('detailed_info', item_id='eval2') }}">Evaluation 2 Details</a></li>
+    <li><a href="{{ url_for('detailed_info', item_id='eval3') }}">Evaluation 3 Details</a></li>
+  </ul>
+
+  <h2>Key Insights</h2>
+  <p><i>Important findings and trends will be highlighted here.</i></p>
+{% endblock %}

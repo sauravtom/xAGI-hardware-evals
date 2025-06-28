@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}xAGI Evals - Detailed Information{% endblock %}
+
+{% block content %}
+  <h1>Detailed Information: {{ item_id }}</h1>
+  <p>This page provides detailed insights into a specific robot data episode, model evaluation, or dataset slice.</p>
+
+  <h2>Episode/Evaluation Details</h2>
+  <ul>
+    <li><strong>ID:</strong> {{ item_id }}</li>
+    <li><strong>Task Description:</strong> [Placeholder for task description]</li>
+    <li><strong>Robot Embodiment:</strong> [Placeholder for robot type]</li>
+    <li><strong>Success Status:</strong> [Placeholder for success/failure]</li>
+    <li><strong>Duration:</strong> [Placeholder for episode length]</li>
+  </ul>
+
+  <h2>Visualizations</h2>
+  <p><i>Embeddings, trajectory plots, and other visualizations will be displayed here.</i></p>
+  <img src="https://via.placeholder.com/600x400.png?text=Robot+Trajectory+Placeholder" alt="Placeholder Robot Trajectory">
+
+  <h2>Annotations</h2>
+  <p><i>Details of VLM extractions, grounding detections, and segmentations.</i></p>
+  <ul>
+    <li>Focus Object: [Placeholder]</li>
+    <li>Environment Descriptors: [Placeholder]</li>
+    <li>Segmentation Mask: [Link to mask or visualization]</li>
+  </ul>
+
+  <p><a href="{{ url_for('dashboard') }}">Back to Dashboard</a></p>
+{% endblock %}
