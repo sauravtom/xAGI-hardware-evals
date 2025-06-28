@@ -62,6 +62,23 @@ xAGI Evals intends to address these challenges by providing a simple, scalable, 
     *   The main dashboard will be displayed.
     *   You can access example detailed pages by clicking links on the dashboard or by navigating to URLs like `http://127.0.0.1:5000/detailed_info/some_id`.
 
+## Running with Docker (Production)
+
+This application can also be run using Docker for a containerized production-like environment.
+
+1.  **Build the Docker image:**
+    Ensure you have Docker installed and running. In the project's root directory (where the `Dockerfile` is located), run:
+    ```bash
+    docker build -t xagi-evals-app .
+    ```
+
+2.  **Run the Docker container:**
+    Once the image is built, run the container:
+    ```bash
+    docker run -p 5000:5000 xagi-evals-app
+    ```
+    This will start the application, and it will be accessible at `http://localhost:5000` in your web browser. The `-p 5000:5000` flag maps port 5000 of the container to port 5000 on your host machine.
+
 ## Future Development
 
 The initial version of xAGI Evals provides the basic web application structure. Future development will focus on:
